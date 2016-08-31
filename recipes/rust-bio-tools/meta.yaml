@@ -1,0 +1,23 @@
+{% set version = "0.1.0" %}
+
+package:
+  name: rust-bio-tools
+  version: {{version}}
+
+source:
+  fn: rust-bio-tools-{{version}}.tar.gz
+  url: https://github.com/rust-bio/rust-bio-tools/archive/v{{version}}.tar.gz
+
+requirements:
+  build:
+    - rust
+
+test:
+  commands:
+    - rbt --help
+
+about:
+  home: https://github.com/rust-bio/rust-bio-tools
+  license: MIT
+  summary: |
+    A set of fast and robust command line utilities for bioinformatics tasks based on Rust-Bio.

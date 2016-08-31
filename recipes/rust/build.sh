@@ -1,3 +1,3 @@
 #!/bin/bash -e
 
-./install.sh --prefix=$PREFIX
+LIBRARY_PATH=$PREFIX/lib ./install.sh --prefix=$PREFIX
