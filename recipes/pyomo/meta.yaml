@@ -10,7 +10,6 @@ source:
   md5: c7c6b933edd5fd667cafcffa04da5b82
 
 build:
-  skip: True # [not py27 or osx]
   number: 1
 
 requirements:
